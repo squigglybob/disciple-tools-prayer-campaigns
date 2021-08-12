@@ -112,12 +112,11 @@ jQuery(document).ready(function($) {
             let day_number = window.campaign_scripts.get_day_number(day.key, current_time_zone);
             if ( day_number !== 0 ){
               for ( let i = 1; i <= 7-day_number; i++ ){
-                list +=  `<div class="day-cell disabled-calendar-day">${window.lodash.escape(i)}</div>`
+                list +=  `<div class="day-cell disabled-calendar-day" style="border-bottom: 1px solid #d2d2d2;">${window.lodash.escape(i)}</div>`
               }
             }
             list += `</div>`
           }
-          console.log(day)
           list += `<h3 class="month-title" style="text-align:left;margin-top:20px;margin-bottom:5px;color:dodgerblue;"><b>${window.lodash.escape(day.month).substring(0,3)}</b> ${new Date(1628218800 * 1000).getFullYear()}</h3><div class="calendar" style="margin-bottom:20px;">`
           if( !last_month ){
             list += headers
@@ -127,18 +126,33 @@ jQuery(document).ready(function($) {
           let day_number = window.campaign_scripts.get_day_number(day.key, current_time_zone);
           let start_of_week = window.campaign_scripts.start_of_week(day.key, current_time_zone);
           for ( let i = 0; i < day_number; i++ ){
-            list +=  `<div class="day-cell disabled-calendar-day">${window.lodash.escape(start_of_week.getDate()+i)}</div>`
+            list +=  `<div class="display-day-cell" style="color:#d2d2d2;border-bottom:1px #d2d2d2 solid;">
+            <div style="margin: 8px 14px 0 14px;text-align:center;width:12px;">${window.lodash.escape(start_of_week.getDate()+i)}</div>
+            </div>`
           }
           last_month = day.month
         }
-        if ( day.disabled ){
+        if ( day.disabled ) {
           list += `<div class="day-cell disabled-calendar-day">
               ${day.day}
           </div>`
         } else {
+          let fill_alpha = window.lodash.escape( Math.trunc( day.percent ) );
+          
+          if ( fill_alpha === '100' ) {
+            fill_alpha = '';
+          } 
+          if ( fill_alpha === '0') {
+            fill_alpha = '00';
+          } else {
+            if ( fill_alpha.toString().length == 1 ) {
+              fill_alpha = '0' + fill_alpha;
+            }
+          }
           list +=`
-            <div class="display-day-cell" data-day=${window.lodash.escape(day.key)}>
-                <progress-ring stroke="3" radius="20" progress="${window.lodash.escape(day.percent)}" text="${window.lodash.escape(day.day)}"></progress-ring>
+          
+            <div class="display-day-cell" data-day=${window.lodash.escape(day.key)} title="${window.lodash.escape(Math.round(day.percent, 2))}% covered" style="border-bottom: 1px #d2d2d2 solid;cursor:pointer;background-color:#1e90ff${fill_alpha}">
+                <div style="margin: 8px 14px 0 14px;text-align:center;width:12px;">${window.lodash.escape(day.day)}</div>
             </div>
           `
         }
@@ -292,7 +306,7 @@ jQuery(document).ready(function($) {
           let day_number = window.campaign_scripts.get_day_number(day.key, current_time_zone);
           let start_of_week = window.campaign_scripts.start_of_week(day.key, current_time_zone);
           for (let i = 0; i < day_number; i++) {
-            list += `<div class="day-cell disabled-calendar-day">${window.lodash.escape(start_of_week.getDate() + i)}</div>`
+            list += `<div class="day-cell disabled-calendar-day"">${window.lodash.escape(start_of_week.getDate() + i)}</div>`
           }
           last_month = day.month
         }
