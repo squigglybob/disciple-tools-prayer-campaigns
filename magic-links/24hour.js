@@ -90,13 +90,13 @@ jQuery(document).ready(function($) {
 
 
     let headers = `
-      <div class="day-cell week-day">Su</div>
-      <div class="day-cell week-day">Mo</div>
-      <div class="day-cell week-day">Tu</div>
-      <div class="day-cell week-day">We</div>
-      <div class="day-cell week-day">Th</div>
-      <div class="day-cell week-day">Fr</div>
-      <div class="day-cell week-day">Sa</div>
+      <div class="day-cell week-day" style="color:#d2d2d2;font-size:12px;font-weight:550;border-bottom: 1px solid #d2d2d2;margin-bottom:5px;">S</div>
+      <div class="day-cell week-day" style="color:#d2d2d2;font-size:12px;font-weight:550;border-bottom: 1px solid #d2d2d2;margin-bottom:5px;">M</div>
+      <div class="day-cell week-day" style="color:#d2d2d2;font-size:12px;font-weight:550;border-bottom: 1px solid #d2d2d2;margin-bottom:5px;">T</div>
+      <div class="day-cell week-day" style="color:#d2d2d2;font-size:12px;font-weight:550;border-bottom: 1px solid #d2d2d2;margin-bottom:5px;">W</div>
+      <div class="day-cell week-day" style="color:#d2d2d2;font-size:12px;font-weight:550;border-bottom: 1px solid #d2d2d2;margin-bottom:5px;">T</div>
+      <div class="day-cell week-day" style="color:#d2d2d2;font-size:12px;font-weight:550;border-bottom: 1px solid #d2d2d2;margin-bottom:5px;">F</div>
+      <div class="day-cell week-day" style="color:#d2d2d2;font-size:12px;font-weight:550;border-bottom: 1px solid #d2d2d2;margin-bottom:5px;">S</div>
     `
 
     //display main calendar
@@ -117,8 +117,8 @@ jQuery(document).ready(function($) {
             }
             list += `</div>`
           }
-
-          list += `<h3 class="month-title">${window.lodash.escape(day.month)}</h3><div class="calendar">`
+          console.log(day)
+          list += `<h3 class="month-title" style="text-align:left;margin-top:20px;margin-bottom:5px;color:dodgerblue;"><b>${window.lodash.escape(day.month).substring(0,3)}</b> ${new Date(1628218800 * 1000).getFullYear()}</h3><div class="calendar" style="margin-bottom:20px;">`
           if( !last_month ){
             list += headers
           }
