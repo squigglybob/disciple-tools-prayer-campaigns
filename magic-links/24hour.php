@@ -190,6 +190,29 @@ function dt_24hour_campaign_body(){
             padding: 0;
         }
 
+        .complete-day {
+            background-color:dodgerblue !important;
+          background-image:
+          linear-gradient(67.5deg, dodgerblue 10%, transparent 10%),
+          linear-gradient(157.5deg, dodgerblue 10%, transparent 10%),
+          linear-gradient(67.5deg, transparent 90%, dodgerblue 90%),
+          linear-gradient(157.5deg, transparent 90%, dodgerblue 90%),
+            
+          linear-gradient(22.5deg, dodgerblue 10%, transparent 10%),
+          linear-gradient(112.5deg, dodgerblue 10%, transparent 10%),
+          linear-gradient(22.5deg, transparent 90%, dodgerblue 90%),
+          linear-gradient(112.5deg, transparent 90%, dodgerblue 90%),
+          
+          linear-gradient(22.5deg, transparent 33%, #55abff 33%, #55abff 36%, transparent 36%, transparent 64%, #55abff 64%, #55abff 67%, transparent 67%),
+          linear-gradient(-22.5deg, transparent 33%, #55abff 33%, #55abff 36%, transparent 36%, transparent 64%, #55abff 64%, #55abff 67%, transparent 67%),
+          linear-gradient(112.5deg, transparent 33%, #55abff 33%, #55abff 36%, transparent 36%, transparent 64%, #55abff 64%, #55abff 67%, transparent 67%),
+          linear-gradient(-112.5deg, transparent 33%, #55abff 33%, #55abff 36%, transparent 36%, transparent 64%, #55abff 64%, #55abff 67%, transparent 67%);
+          background-size: 40px 40px;
+          background-position: 
+            -16px 24px, -24px 24px, -24px 16px, -16px 16px,
+            -24px 16px, -16px 16px, -16px 24px, -24px 24px,
+            0 0, 0 0, 0 0, 0 0;
+        }
     </style>
 
     <div id="cp-wrapper" class="loading-content">

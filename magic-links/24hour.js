@@ -138,9 +138,11 @@ jQuery(document).ready(function($) {
           </div>`
         } else {
           let fill_alpha = window.lodash.escape( Math.trunc( day.percent ) );
-          
+          let number_margin_top = 10;
+
           if ( fill_alpha === '100' ) {
             fill_alpha = '';
+            number_margin_top = -8;
           } 
           if ( fill_alpha === '0') {
             fill_alpha = '00';
@@ -151,8 +153,13 @@ jQuery(document).ready(function($) {
           }
           list +=`
           
-            <div class="display-day-cell" data-day=${window.lodash.escape(day.key)} title="${window.lodash.escape(Math.round(day.percent, 2))}% covered" style="border-bottom: 1px #d2d2d2 solid;cursor:pointer;background-color:#1e90ff${fill_alpha}">
-                <div style="margin: 8px 14px 0 14px;text-align:center;width:12px;">${window.lodash.escape(day.day)}</div>
+            <div class="display-day-cell" data-day=${window.lodash.escape(day.key)} title="${window.lodash.escape(Math.round(day.percent, 2))}% covered" style="border-bottom: 1px #d2d2d2 solid;cursor:pointer;background-color:#1e90ff${fill_alpha}">`;
+                if ( fill_alpha ===  '' ) {
+                  list += `<div style="text-align:right;margin-right:1px;color:cyan;font-size:12px;">&#10003;</div>`;
+                }
+
+                list += `<div style="margin: ${number_margin_top}px 14px 0 14px;text-align:end;width:12px;">${window.lodash.escape(day.day)}
+                </div>
             </div>
           `
         }
