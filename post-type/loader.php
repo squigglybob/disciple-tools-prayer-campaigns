@@ -61,7 +61,7 @@ require_once 'dt-subscriptions.php';
 
 require_once 'module-campaigns-year.php';
 DT_Campaign_Year::instance();
-require_once plugin_dir_path( __DIR__ ) . '/magic-links/year/year-campaign.php';
+require_once plugin_dir_path( __DIR__ ) . '/magic-links/vue-year-magic-link/year-campaign.php';
 new DT_Prayer_Campaign_Year_Magic_Link();
 
 
