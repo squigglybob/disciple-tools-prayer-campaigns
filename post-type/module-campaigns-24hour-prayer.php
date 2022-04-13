@@ -504,11 +504,14 @@ class DT_Prayer_Campaign_24_Hour_Magic_Link extends DT_Magic_Url_Base {
     public $type_actions = [
         '' => "Manage",
         'access_account' => 'Access Account',
-        'shortcode' => "Shortcode View"
+        'shortcode' => "Shortcode View",
+        'stats' => "Stats"
     ];
 
     public function __construct(){
         parent::__construct();
+
+
         if ( !$this->check_parts_match() ){
             return;
         }
@@ -517,6 +520,10 @@ class DT_Prayer_Campaign_24_Hour_Magic_Link extends DT_Magic_Url_Base {
             $this->switch_language();
             add_action( 'wp_enqueue_scripts', [ $this, 'wp_enqueue_scripts' ], 100 );
             add_action( 'dt_blank_body', [ $this, 'dt_blank_body' ], 10 );
+        } elseif ( 'stats' === $this->parts['action'] ) {
+            require_once plugin_dir_path( __DIR__ ) . '/magic-links/24hour-stats/magic-link.php';
+            new Disciple_Tools_24Hour_Stats_Magic_Link( $this->parts );
+            return;
         } else {
             return; // fail if no valid action url found
         }
@@ -568,10 +575,12 @@ class DT_Prayer_Campaign_24_Hour_Magic_Link extends DT_Magic_Url_Base {
         $allowed_js[] = 'dt_campaign_core';
         $allowed_js[] = 'dt_campaign';
         $allowed_js[] = 'luxon';
+        $allowed_js[] = 'magic_link_scripts';
         return $allowed_js;
     }
     // add dt_campaign_core to allowed scripts
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
+        $allowed_css[] = 'magic_link_css';
         $allowed_css[] = 'dt_campaign_style';
         return $allowed_css;
     }
