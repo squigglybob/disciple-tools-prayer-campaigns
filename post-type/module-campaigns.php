@@ -355,7 +355,7 @@ class DT_Campaigns_Base {
             <div class="grid-x">
             <div class="cell small-6 ">
                 <div class="section-subheader">
-                    Subscribers
+                    <?php esc_html_e( 'Subscribers', 'disciple-tools-prayer-campaigns' ); ?>
                 </div>
                 <div>
                     <span style="font-size:2rem;"><a href="javascript:void(0)" id="campaign_subscriber_list"><?php echo esc_html( $subscribers_count ) ?></a></span>
@@ -363,7 +363,7 @@ class DT_Campaigns_Base {
             </div>
             <div class="cell small-6 ">
                 <div class="section-subheader">
-                    Coverage
+                    <?php esc_html_e( 'Coverage', 'disciple-tools-prayer-campaigns' ); ?>
                 </div>
                 <div>
                     <span style="font-size:2rem;"><a href="javascript:void(0)" id="campaign_coverage_chart"><?php echo esc_html( $coverage_count ) ?>%</a></span>
@@ -371,7 +371,7 @@ class DT_Campaigns_Base {
             </div>
             <div class="cell small-6 ">
                 <div class="section-subheader">
-                    Future Events
+                    <?php esc_html_e( 'Future Events', 'disciple-tools-prayer-campaigns' ); ?>
                 </div>
                 <div>
                     <span style="font-size:2rem;"><?php echo esc_html( $future_commitments ) ?></span>
@@ -379,7 +379,7 @@ class DT_Campaigns_Base {
             </div>
             <div class="cell small-6 ">
                 <div class="section-subheader">
-                    Past Events
+                    <?php esc_html_e( 'Past Events', 'disciple-tools-prayer-campaigns' ); ?>
                 </div>
                 <div>
                     <span style="font-size:2rem;"><?php echo esc_html( $past_commitments ) ?></span>
@@ -387,7 +387,7 @@ class DT_Campaigns_Base {
             </div>
             <div class="cell small-6 ">
                 <div class="section-subheader">
-                    Future Hours
+                    <?php esc_html_e( 'Future Hours', 'disciple-tools-prayer-campaigns' ); ?>
                 </div>
                 <div>
                     <span style="font-size:2rem;"><?php echo esc_html( $future_hours ) ?></span>
@@ -395,14 +395,14 @@ class DT_Campaigns_Base {
             </div>
             <div class="cell small-6 ">
                 <div class="section-subheader">
-                    Hours Prayed
+                    <?php esc_html_e( 'Hours Prayed', 'disciple-tools-prayer-campaigns' ); ?>
                 </div>
                 <div>
                     <span style="font-size:2rem;"><?php echo esc_html( $hours_prayed ) ?></span>
                 </div>
             </div>
             <div class="cell small-6 ">
-                <button class="button hollow" id="campaign_coverage_stats">Stats</button>
+                <button class="button hollow" id="campaign_coverage_stats"><?php esc_html_e( 'Stats', 'disciple-tools-prayer-campaigns' ); ?></button>
             </div>
         </div>
         <script>
