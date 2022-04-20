@@ -346,9 +346,9 @@ class DT_Campaigns_Base {
         if ( $post_type === $this->post_type && $section === "commitments" ){
             $subscribers_count = DT_Subscriptions::get_subscribers_count( get_the_ID() );
             $coverage_count = $this->query_coverage_percentage( get_the_ID() );
-            $scheduled_commitments = $this->query_scheduled_count( get_the_ID() );
+            $future_commitments = $this->query_future_count( get_the_ID() );
             $past_commitments = $this->query_past_count( get_the_ID() );
-            $scheduled_hours = $this->query_scheduled_minutes( get_the_ID() ) / 60;
+            $future_hours = $this->query_future_minutes( get_the_ID() ) / 60;
             $hours_prayed = $this->query_minutes_prayed( get_the_ID() ) / 60;
             ?>
             <div class="cell small-12">
@@ -371,10 +371,10 @@ class DT_Campaigns_Base {
             </div>
             <div class="cell small-6 ">
                 <div class="section-subheader">
-                    Scheduled Events
+                    Future Events
                 </div>
                 <div>
-                    <span style="font-size:2rem;"><?php echo esc_html( $scheduled_commitments ) ?></span>
+                    <span style="font-size:2rem;"><?php echo esc_html( $future_commitments ) ?></span>
                 </div>
             </div>
             <div class="cell small-6 ">
@@ -387,10 +387,10 @@ class DT_Campaigns_Base {
             </div>
             <div class="cell small-6 ">
                 <div class="section-subheader">
-                    Scheduled Hours
+                    Future Hours
                 </div>
                 <div>
-                    <span style="font-size:2rem;"><?php echo esc_html( $scheduled_hours ) ?></span>
+                    <span style="font-size:2rem;"><?php echo esc_html( $future_hours ) ?></span>
                 </div>
             </div>
             <div class="cell small-6 ">
@@ -640,7 +640,7 @@ class DT_Campaigns_Base {
         ];
     }
 
-    public function query_scheduled_count( $campaign_post_id ){
+    public function query_future_count( $campaign_post_id ){
         global $wpdb;
         return $wpdb->get_var( $wpdb->prepare(  "SELECT COUNT(r.post_id) as count
             FROM (SELECT p2p_to as post_id
@@ -664,7 +664,7 @@ class DT_Campaigns_Base {
         ) );
     }
 
-    public function query_scheduled_minutes( $campaign_post_id ){
+    public function query_future_minutes( $campaign_post_id ){
         $time_format = '%H:%i';
         global $wpdb;
         return $wpdb->get_var( $wpdb->prepare( "SELECT
