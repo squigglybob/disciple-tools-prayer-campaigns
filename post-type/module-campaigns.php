@@ -348,8 +348,8 @@ class DT_Campaigns_Base {
             $coverage_count = $this->query_coverage_percentage( get_the_ID() );
             $future_commitments = $this->query_future_count( get_the_ID() );
             $past_commitments = $this->query_past_count( get_the_ID() );
-            $future_hours = $this->query_future_minutes( get_the_ID() ) / 60;
-            $hours_prayed = $this->query_minutes_prayed( get_the_ID() ) / 60;
+            $total_hours = round( $this->query_total_minutes( get_the_ID() ) / 60, 2 );
+            $hours_prayed = round( $this->query_minutes_prayed( get_the_ID() ) / 60, 2 );
             ?>
             <div class="cell small-12">
             <div class="grid-x">
@@ -387,10 +387,10 @@ class DT_Campaigns_Base {
             </div>
             <div class="cell small-6 ">
                 <div class="section-subheader">
-                    <?php esc_html_e( 'Future Hours', 'disciple-tools-prayer-campaigns' ); ?>
+                    <?php esc_html_e( 'Total Hours', 'disciple-tools-prayer-campaigns' ); ?>
                 </div>
                 <div>
-                    <span style="font-size:2rem;"><?php echo esc_html( $future_hours ) ?></span>
+                    <span style="font-size:2rem;"><?php echo esc_html( $total_hours ) ?></span>
                 </div>
             </div>
             <div class="cell small-6 ">
@@ -664,16 +664,15 @@ class DT_Campaigns_Base {
         ) );
     }
 
-    public function query_future_minutes( $campaign_post_id ){
-        $time_format = '%H:%i';
+    public function query_total_minutes( $campaign_post_id ){
         global $wpdb;
         return $wpdb->get_var( $wpdb->prepare( "SELECT
-        SUM( FLOOR( TIME_TO_SEC( TIMEDIFF( FROM_UNIXTIME( r.time_end, %s ), FROM_UNIXTIME( r.time_begin, %s ) ) ) / 60 ) ) AS minutes
+        SUM( TIME_TO_SEC( TIMEDIFF( FROM_UNIXTIME( r.time_end ), FROM_UNIXTIME( r.time_begin ) ) ) / 60 ) AS minutes
         FROM (SELECT p2p_to as post_id
-        FROM $wpdb->p2p
-        WHERE p2p_type = 'campaigns_to_subscriptions' AND p2p_from = %s) as t1
+                FROM $wpdb->p2p
+                WHERE p2p_type = 'campaigns_to_subscriptions' AND p2p_from = %s) as t1
         LEFT JOIN $wpdb->dt_reports r ON t1.post_id=r.post_id
-        WHERE r.post_id IS NOT NULL;", $time_format, $time_format, $campaign_post_id
+        WHERE r.post_id IS NOT NULL;", $campaign_post_id
         ) );
     }
 
@@ -681,10 +680,10 @@ class DT_Campaigns_Base {
         $time_format = '%H:%i';
         global $wpdb;
         return $wpdb->get_var( $wpdb->prepare( "SELECT
-        SUM( FLOOR( TIME_TO_SEC( TIMEDIFF( FROM_UNIXTIME( r.time_end, %s ), FROM_UNIXTIME( r.time_begin, %s ) ) ) / 60 ) ) AS minutes
+        SUM( FLOOR( TIME_TO_SEC( ABS( TIMEDIFF( FROM_UNIXTIME( r.time_end, %s ), FROM_UNIXTIME( r.time_begin, %s ) ) ) ) / 60 ) ) AS minutes
         FROM (SELECT p2p_to as post_id
-        FROM $wpdb->p2p
-        WHERE p2p_type = 'campaigns_to_subscriptions' AND p2p_from = %s) as t1
+                FROM $wpdb->p2p
+                WHERE p2p_type = 'campaigns_to_subscriptions' AND p2p_from = %s) as t1
         LEFT JOIN $wpdb->dt_reports r ON t1.post_id=r.post_id
         WHERE r.post_id IS NOT NULL
         AND r.time_end <= UNIX_TIMESTAMP();", $time_format, $time_format, $campaign_post_id
