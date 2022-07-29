@@ -40,7 +40,7 @@
 <!-- Footer Section End -->
 
 <!-- Go To Top Link -->
-<a href="#" class="back-to-top" aria-label="back to top">
+<a href="<?php echo esc_url( home_url( '#' ) ) ?>" class="back-to-top" aria-label="back to top">
     <i class="lnr lnr-arrow-up"></i>
 </a>
 

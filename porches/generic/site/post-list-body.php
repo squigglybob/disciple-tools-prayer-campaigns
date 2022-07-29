@@ -92,7 +92,7 @@ if ( empty( $list->posts ) ){
                 }
 
                 $days_displayed[] = $campaign_day;
-                $url = "/prayer/fuel/$campaign_day"
+                $url = site_url( "/prayer/fuel/$campaign_day" );
                 ?>
 
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
