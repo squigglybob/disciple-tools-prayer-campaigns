@@ -516,7 +516,7 @@ msgstr ""
 #: porches/generic/site/top-section.php:91
 #: porches/ongoing/site/home-body.php:87
 #: porches/ongoing/site/home-body.php:192
-msgid "Sign Up to Pray"
+msgid "Sign Up to Pray like crazy"
 msgstr ""
 
 #: porches/generic/site/home-body.php:158
