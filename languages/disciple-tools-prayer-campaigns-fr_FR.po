@@ -2,11 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: P4M Prayer Campaigns\n"
 "POT-Creation-Date: 2022-09-05 08:19+0100\n"
-"Language: fr\n"
+"PO-Revision-Date: 2022-09-20 16:21+0000\n"
+"Last-Translator: Weblate Admin <weblate.admin@example.com>\n"
+"Language-Team: French <http://weblate.local/projects/disciple-tools/"
+"disciple-tools-prayer-campaigns/fr/>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: POEditor.com\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: campaign-functions/cron-schedule.php:82
 msgid "Prayer Time reminder!"
@@ -36,11 +41,11 @@ msgstr "Bonjour %s,"
 
 #: campaign-functions/cron-schedule.php:145 porches/generic/site/stats.php:131
 msgid "Thank you for praying with us!"
-msgstr "Merci de nous rejoindre en prière!"
+msgstr "Merci de nous rejoindre en prière !"
 
 #: campaign-functions/cron-schedule.php:146
 msgid "Here are your upcoming prayer times:"
-msgstr "Voici vos temps de prière à venir:"
+msgstr "Voici vos temps de prière à venir :"
 
 #: campaign-functions/cron-schedule.php:148
 #: campaign-functions/send-email-utility.php:123
@@ -55,7 +60,7 @@ msgstr "Cliquez ici pour gérer votre compte et vos engagements de temps"
 
 #: campaign-functions/send-email-utility.php:100
 msgid "Registered to pray with us!"
-msgstr "Inscrits pour prier avec nous!"
+msgstr "Inscrits pour prier avec nous !"
 
 #: campaign-functions/send-email-utility.php:119
 msgid ""
@@ -73,7 +78,7 @@ msgstr ""
 
 #: campaign-functions/send-email-utility.php:121
 msgid "Here are the times you have committed to pray:"
-msgstr "Voici les temps que vous avez sélectionné pour prier:"
+msgstr "Voici les temps que vous avez sélectionné pour prier :"
 
 #: campaign-functions/send-email-utility.php:170
 msgid "Registration Confirmation"
@@ -109,7 +114,7 @@ msgid ""
 "Thank you for signing up to help us cover the region in nonstop prayer!!"
 msgstr ""
 "Merci de vous être inscrit pour nous aider à couvrir la région en prière non-"
-"stop !!"
+"stop !!"
 
 #: campaign-functions/send-email-utility.php:266
 msgid ""
@@ -713,7 +718,7 @@ msgstr "Prier tous les jours à la même heure"
 
 #: shortcodes/24hour.php:137 shortcodes/ongoing.php:165
 msgid "Example: Everyday at 4pm for 15mins"
-msgstr "Exemple: Tous les jours à 16h pour 15minutes"
+msgstr "Exemple : Tous les jours à 16h pour 15minutes"
 
 #: shortcodes/24hour.php:140 shortcodes/ongoing.php:168
 msgid "Select days and times to pray"
@@ -721,17 +726,17 @@ msgstr "Sélectionnez les jours et les heures pour prier"
 
 #: shortcodes/24hour.php:142 shortcodes/ongoing.php:170
 msgid "Example: Monday 12th at 6pm for 15mins"
-msgstr "Exemple: Lundi 12 à 18h pour 15minutes"
+msgstr "Exemple : Lundi 12 à 18h pour 15minutes"
 
 #: shortcodes/24hour.php:167 shortcodes/24hour.php:204
 #: shortcodes/ongoing.php:196 shortcodes/ongoing.php:233
 msgid "Showing times for:"
-msgstr "Affichage des heures pour:"
+msgstr "Affichage des heures pour :"
 
 #: shortcodes/24hour.php:231 shortcodes/24hour.php:307
 #: shortcodes/ongoing.php:267
 msgid "Sent! Check your email."
-msgstr "Envoyé! Vérifiez votre email."
+msgstr "Envoyé ! Vérifiez votre email."
 
 #: shortcodes/24hour.php:233 shortcodes/ongoing.php:269
 msgid ""
@@ -813,9 +818,10 @@ msgid ""
 "users to subscribe to pray for specific locations at specific times, "
 "supporting both time and geographic prayer saturation for your project."
 msgstr ""
-"Add a prayer subscriptions module to Disciple.Tools that allows for non-"
-"users to subscribe to pray for specific locations at specific times, "
-"supporting both time and geographic prayer saturation for your project."
+"Ajoutez un module d'abonnement à la prière à Disciple.Tools qui permet aux "
+"non-utilisateurs de s'abonner pour prier pour des endroits spécifiques à des "
+"moments précis, prenant en charge à la fois la saturation temporelle et "
+"géographique de la prière pour votre projet."
 
 #. Author URI of the plugin/theme
 msgid "https://github.com/DiscipleTools"
