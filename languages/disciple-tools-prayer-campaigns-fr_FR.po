@@ -5,7 +5,7 @@ msgstr ""
 "prayer-campaigns\n"
 "POT-Creation-Date: 2022-09-22T10:01:30+01:00\n"
 "PO-Revision-Date: 2022-09-22 13:22+0000\n"
-"Last-Translator: Weblate Admin <nathinabob@gmail.com>\n"
+"Last-Translator: nathaniel <nathinabob+translator@gmail.com>\n"
 "Language-Team: French <https://translate.disciple.tools/projects/"
 "pray4movement/disciple-tools-prayer-campaigns/fr/>\n"
 "Language: fr_FR\n"
@@ -187,7 +187,7 @@ msgstr "Oui"
 #: classes/dt-porch-admin-tab-base.php:171
 #: classes/dt-porch-admin-tab-base.php:174
 msgid "No"
-msgstr ""
+msgstr "Non"
 
 #: magic-links/subscription-management/subscription-management.php:38
 #: magic-links/subscription-management/subscription-management.php:266
@@ -722,11 +722,8 @@ msgid ""
 msgstr ""
 
 #: porches/ramadan/site/home-body.php:148
-#, fuzzy
-#| msgctxt "Campaign Name is Finished"
-#| msgid "%s is Finished"
 msgid "Ramadan is Finished"
-msgstr "%s est finit"
+msgstr "Ramadan est finit"
 
 #: porches/ramadan/site/home-body.php:161
 msgid "Ramadan Ends ..."
@@ -738,7 +735,7 @@ msgstr ""
 
 #: porches/ramadan/site/home-body.php:193
 msgid "here"
-msgstr ""
+msgstr "ici"
 
 #: porches/ramadan/site/home-body.php:277
 msgid "More Hours to be covered"
@@ -757,13 +754,11 @@ msgstr "Nous voulons couvrir ce region avec de la prière 24/7 continuelle."
 #: post-type/module-campaigns-24hour-prayer.php:38
 #: post-type/module-campaigns-ongoing-prayer.php:42
 msgid "Collaborators"
-msgstr ""
+msgstr "Collaborateurs"
 
 #: post-type/module-campaigns-24hour-prayer.php:61
-#, fuzzy
-#| msgid "Campaign Stats"
 msgid "Campaign Communication"
-msgstr "Statistiques de la campagne"
+msgstr "Communication de la campagne"
 
 #: post-type/module-campaigns-24hour-prayer.php:114
 #: post-type/module-campaigns-24hour-prayer.php:207
@@ -804,28 +799,28 @@ msgstr ""
 
 #: post-type/subscriptions.php:132
 msgid "Tags"
-msgstr ""
+msgstr "Étiquettes"
 
 #: post-type/subscriptions.php:133
 msgctxt "Optional Documentation"
 msgid "A useful way to group related items."
-msgstr ""
+msgstr "Un moyen utile de regrouper les éléments liés."
 
 #: post-type/subscriptions.php:141
 msgid "Follow"
-msgstr ""
+msgstr "Suivre"
 
 #: post-type/subscriptions.php:149
 msgid "Un-Follow"
-msgstr ""
+msgstr "Ne plus suivre"
 
 #: post-type/subscriptions.php:156
 msgid "Tasks"
-msgstr ""
+msgstr "Tâches"
 
 #: post-type/subscriptions.php:180
 msgid "Status"
-msgstr ""
+msgstr "Statut"
 
 #: post-type/subscriptions.php:181
 msgctxt "field description"
@@ -834,7 +829,7 @@ msgstr ""
 
 #: post-type/subscriptions.php:185
 msgid "Inactive"
-msgstr ""
+msgstr "Inactif"
 
 #: post-type/subscriptions.php:186
 msgctxt "field description"
@@ -843,7 +838,7 @@ msgstr ""
 
 #: post-type/subscriptions.php:190
 msgid "Active"
-msgstr ""
+msgstr "Actif"
 
 #: post-type/subscriptions.php:191
 msgctxt "field description"
@@ -852,7 +847,7 @@ msgstr ""
 
 #: post-type/subscriptions.php:213
 msgid "Phone"
-msgstr ""
+msgstr "Téléphone"
 
 #: post-type/subscriptions.php:214
 msgid "Subscriber phone number"
@@ -860,7 +855,7 @@ msgstr ""
 
 #: post-type/subscriptions.php:222
 msgid "Languages"
-msgstr ""
+msgstr "Langues"
 
 #: post-type/subscriptions.php:223
 msgid "Subscriber preferred language"
@@ -880,25 +875,25 @@ msgstr ""
 
 #: post-type/subscriptions.php:257 post-type/subscriptions.php:267
 msgid "Locations"
-msgstr ""
+msgstr "Emplacements"
 
 #: post-type/subscriptions.php:258 post-type/subscriptions.php:268
 msgctxt "Optional Documentation"
 msgid "The general location where this contact is located."
-msgstr ""
+msgstr "L'emplacement général où se trouve ce contact."
 
 #: post-type/subscriptions.php:276
 msgid "Address"
-msgstr ""
+msgstr "Adresse"
 
 #: post-type/subscriptions.php:295
 msgid "Contact"
-msgstr ""
+msgstr "Contact"
 
 #: post-type/subscriptions.php:296
 msgctxt "Optional Documentation"
 msgid "The contacts who are members of this group."
-msgstr ""
+msgstr "Les contacts qui sont membres de ce groupe."
 
 #: post-type/subscriptions.php:306
 msgid "Timezone"
@@ -906,22 +901,20 @@ msgstr ""
 
 #: post-type/subscriptions.php:311
 msgid "Language"
-msgstr ""
+msgstr "La langue"
 
 #: post-type/subscriptions.php:316
-#, fuzzy
-#| msgid "Receive prayer time notifications"
 msgid "Receive Prayer Time Notifications"
 msgstr "Recevoir des notifications d'heure de prière"
 
 #: post-type/subscriptions.php:352
 msgid "Other"
-msgstr ""
+msgstr "Autre"
 
 #: post-type/subscriptions.php:450
 msgctxt "Search 'something'"
 msgid "Search %s"
-msgstr ""
+msgstr "Rechercher % s"
 
 #: post-type/subscriptions.php:529
 msgid "Verified"
