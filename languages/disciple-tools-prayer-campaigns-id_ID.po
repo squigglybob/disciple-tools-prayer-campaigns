@@ -4,11 +4,16 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/disciple-tools-"
 "prayer-campaigns\n"
 "POT-Creation-Date: 2022-09-22T10:01:30+01:00\n"
-"Language: id\n"
+"PO-Revision-Date: 2022-09-22 13:59+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Indonesian <https://translate.disciple.tools/projects/"
+"pray4movement/disciple-tools-prayer-campaigns/id/>\n"
+"Language: id_ID\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: POEditor.com\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. Plugin Name of the plugin
 msgid "Disciple.Tools - Prayer Campaigns"
@@ -42,7 +47,7 @@ msgstr ""
 
 #: admin/dt-prayer-campaigns.php:244 admin/dt-prayer-campaigns.php:351
 msgid "Update"
-msgstr ""
+msgstr "Update"
 
 #: campaign-functions/cron-schedule.php:83
 msgid "Click here to see the prayer prompts for today: %s"
@@ -172,12 +177,12 @@ msgstr ""
 #: classes/dt-porch-admin-tab-base.php:170
 #: classes/dt-porch-admin-tab-base.php:173
 msgid "Yes"
-msgstr ""
+msgstr "Ya"
 
 #: classes/dt-porch-admin-tab-base.php:171
 #: classes/dt-porch-admin-tab-base.php:174
 msgid "No"
-msgstr ""
+msgstr "Tidak"
 
 #: magic-links/subscription-management/subscription-management.php:38
 #: magic-links/subscription-management/subscription-management.php:266
@@ -590,7 +595,7 @@ msgstr "Jam-jam Doa"
 #: porches/ongoing/site/home-body.php:239
 #: porches/ramadan/site/home-body.php:254
 msgid "Hours"
-msgstr ""
+msgstr "jam-jam"
 
 #: porches/generic/site/home-body.php:273 porches/generic/site/stats.php:176
 #: porches/ramadan/site/home-body.php:272
@@ -734,7 +739,7 @@ msgstr ""
 #: post-type/module-campaigns-24hour-prayer.php:38
 #: post-type/module-campaigns-ongoing-prayer.php:42
 msgid "Collaborators"
-msgstr ""
+msgstr "Kolaborator"
 
 #: post-type/module-campaigns-24hour-prayer.php:61
 msgid "Campaign Communication"
@@ -777,7 +782,7 @@ msgstr ""
 
 #: post-type/subscriptions.php:132
 msgid "Tags"
-msgstr ""
+msgstr "Tanda-tanda"
 
 #: post-type/subscriptions.php:133
 msgctxt "Optional Documentation"
@@ -786,19 +791,19 @@ msgstr ""
 
 #: post-type/subscriptions.php:141
 msgid "Follow"
-msgstr ""
+msgstr "Ikuti"
 
 #: post-type/subscriptions.php:149
 msgid "Un-Follow"
-msgstr ""
+msgstr "Tidak Ikuti Lagi"
 
 #: post-type/subscriptions.php:156
 msgid "Tasks"
-msgstr ""
+msgstr "Tugas-tugas"
 
 #: post-type/subscriptions.php:180
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: post-type/subscriptions.php:181
 msgctxt "field description"
@@ -807,7 +812,7 @@ msgstr ""
 
 #: post-type/subscriptions.php:185
 msgid "Inactive"
-msgstr ""
+msgstr "Aktiv"
 
 #: post-type/subscriptions.php:186
 msgctxt "field description"
@@ -816,7 +821,7 @@ msgstr ""
 
 #: post-type/subscriptions.php:190
 msgid "Active"
-msgstr ""
+msgstr "Aktif"
 
 #: post-type/subscriptions.php:191
 msgctxt "field description"
@@ -825,7 +830,7 @@ msgstr ""
 
 #: post-type/subscriptions.php:213
 msgid "Phone"
-msgstr ""
+msgstr "Telepon"
 
 #: post-type/subscriptions.php:214
 msgid "Subscriber phone number"
@@ -833,7 +838,7 @@ msgstr ""
 
 #: post-type/subscriptions.php:222
 msgid "Languages"
-msgstr ""
+msgstr "Bahasa"
 
 #: post-type/subscriptions.php:223
 msgid "Subscriber preferred language"
@@ -853,25 +858,25 @@ msgstr ""
 
 #: post-type/subscriptions.php:257 post-type/subscriptions.php:267
 msgid "Locations"
-msgstr ""
+msgstr "Lokasi-lokasi"
 
 #: post-type/subscriptions.php:258 post-type/subscriptions.php:268
 msgctxt "Optional Documentation"
 msgid "The general location where this contact is located."
-msgstr ""
+msgstr "Lokasi secara jenderal yang menjadi lokasi kontak ini."
 
 #: post-type/subscriptions.php:276
 msgid "Address"
-msgstr ""
+msgstr "Alamat"
 
 #: post-type/subscriptions.php:295
 msgid "Contact"
-msgstr ""
+msgstr "Kontak"
 
 #: post-type/subscriptions.php:296
 msgctxt "Optional Documentation"
 msgid "The contacts who are members of this group."
-msgstr ""
+msgstr "Kontak-kontak yang adalah anggota kelompok ini."
 
 #: post-type/subscriptions.php:306
 msgid "Timezone"
@@ -879,7 +884,7 @@ msgstr ""
 
 #: post-type/subscriptions.php:311
 msgid "Language"
-msgstr ""
+msgstr "Bahasa"
 
 #: post-type/subscriptions.php:316
 #, fuzzy
@@ -889,16 +894,16 @@ msgstr "Menerima Pemberitahuan Waktu Doa (diperlukan verifikasi email)."
 
 #: post-type/subscriptions.php:352
 msgid "Other"
-msgstr ""
+msgstr "Yang lain"
 
 #: post-type/subscriptions.php:450
 msgctxt "Search 'something'"
 msgid "Search %s"
-msgstr ""
+msgstr "Mencari %s"
 
 #: post-type/subscriptions.php:529
 msgid "Verified"
-msgstr ""
+msgstr "diverifikasi"
 
 #: post-type/subscriptions.php:532
 #, fuzzy
@@ -909,7 +914,7 @@ msgstr "email"
 #: post-type/subscriptions.php:700 post-type/subscriptions.php:708
 msgctxt "List Filters"
 msgid "All"
-msgstr ""
+msgstr "Semua"
 
 #: shortcodes/24hour.php:33 shortcodes/ongoing.php:73
 msgid "covered once"
