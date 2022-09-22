@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-09-22T09:47:50+01:00\n"
+"POT-Creation-Date: 2022-09-22T09:56:55+01:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: disciple-tools-prayer-campaigns\n"
@@ -505,20 +505,20 @@ msgstr ""
 #: porches/generic/site/home-body.php:196
 #: porches/generic/site/top-section.php:91
 #: porches/ongoing/site/home-body.php:87
-#: porches/ongoing/site/home-body.php:192
+#: porches/ongoing/site/home-body.php:195
 #: porches/ramadan/site/home-body.php:82
 #: porches/ramadan/site/home-body.php:186
 msgid "Sign Up to Pray"
 msgstr ""
 
 #: porches/generic/site/home-body.php:158
-#: porches/ongoing/site/home-body.php:154
+#: porches/ongoing/site/home-body.php:157
 msgctxt "Campaign Name is Finished"
 msgid "%s is Finished"
 msgstr ""
 
 #: porches/generic/site/home-body.php:171
-#: porches/ongoing/site/home-body.php:167
+#: porches/ongoing/site/home-body.php:170
 msgctxt "Campaign Name End in [4 days]"
 msgid "%s Ends In"
 msgstr ""
@@ -526,8 +526,8 @@ msgstr ""
 #: porches/generic/site/home-body.php:172
 #: porches/generic/site/home-body.php:179
 #: porches/generic/site/stats.php:203
-#: porches/ongoing/site/home-body.php:168
-#: porches/ongoing/site/home-body.php:175
+#: porches/ongoing/site/home-body.php:171
+#: porches/ongoing/site/home-body.php:178
 #: porches/ramadan/site/home-body.php:162
 #: porches/ramadan/site/home-body.php:169
 msgid "days"
@@ -536,8 +536,8 @@ msgstr ""
 #: porches/generic/site/home-body.php:173
 #: porches/generic/site/home-body.php:180
 #: porches/generic/site/stats.php:202
-#: porches/ongoing/site/home-body.php:169
-#: porches/ongoing/site/home-body.php:176
+#: porches/ongoing/site/home-body.php:172
+#: porches/ongoing/site/home-body.php:179
 #: porches/ramadan/site/home-body.php:163
 #: porches/ramadan/site/home-body.php:170
 msgid "hours"
@@ -545,8 +545,8 @@ msgstr ""
 
 #: porches/generic/site/home-body.php:174
 #: porches/generic/site/home-body.php:181
-#: porches/ongoing/site/home-body.php:170
-#: porches/ongoing/site/home-body.php:177
+#: porches/ongoing/site/home-body.php:173
+#: porches/ongoing/site/home-body.php:180
 #: porches/ramadan/site/home-body.php:164
 #: porches/ramadan/site/home-body.php:171
 msgid "minutes"
@@ -554,15 +554,15 @@ msgstr ""
 
 #: porches/generic/site/home-body.php:175
 #: porches/generic/site/home-body.php:182
-#: porches/ongoing/site/home-body.php:171
-#: porches/ongoing/site/home-body.php:178
+#: porches/ongoing/site/home-body.php:174
+#: porches/ongoing/site/home-body.php:181
 #: porches/ramadan/site/home-body.php:165
 #: porches/ramadan/site/home-body.php:172
 msgid "seconds"
 msgstr ""
 
 #: porches/generic/site/home-body.php:178
-#: porches/ongoing/site/home-body.php:174
+#: porches/ongoing/site/home-body.php:177
 msgctxt "Campaign Name End in [4 days]"
 msgid "%s Begins In"
 msgstr ""
@@ -573,13 +573,13 @@ msgid "Days"
 msgstr ""
 
 #: porches/generic/site/home-body.php:227
-#: porches/ongoing/site/home-body.php:215
+#: porches/ongoing/site/home-body.php:218
 #: porches/ramadan/site/home-body.php:226
 msgid "Next"
 msgstr ""
 
 #: porches/generic/site/home-body.php:228
-#: porches/ongoing/site/home-body.php:216
+#: porches/ongoing/site/home-body.php:219
 #: porches/ramadan/site/home-body.php:227
 msgid "Month"
 msgstr ""
@@ -590,7 +590,7 @@ msgid "Hours of Prayer"
 msgstr ""
 
 #: porches/generic/site/home-body.php:255
-#: porches/ongoing/site/home-body.php:233
+#: porches/ongoing/site/home-body.php:236
 #: porches/ramadan/site/home-body.php:254
 msgid "Hours"
 msgstr ""
@@ -602,12 +602,12 @@ msgid "Prayer Commitments Needed"
 msgstr ""
 
 #: porches/generic/site/home-body.php:278
-#: porches/ongoing/site/home-body.php:248
+#: porches/ongoing/site/home-body.php:251
 msgid "Hours Remaining"
 msgstr ""
 
 #: porches/generic/site/home-body.php:299
-#: porches/ongoing/site/home-body.php:267
+#: porches/ongoing/site/home-body.php:270
 #: porches/ramadan/site/home-body.php:298
 msgid "View All"
 msgstr ""
@@ -671,6 +671,10 @@ msgstr ""
 
 #: porches/generic/site/top-section.php:22
 msgid "Sign Up"
+msgstr ""
+
+#: porches/ongoing/site/home-body.php:91
+msgid "Sign Up to Spend More Time with God"
 msgstr ""
 
 #: porches/ramadan/settings.php:6
