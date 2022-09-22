@@ -4,8 +4,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/disciple-tools-"
 "prayer-campaigns\n"
 "POT-Creation-Date: 2022-09-22T10:01:30+01:00\n"
-"PO-Revision-Date: 2022-09-22 13:33+0000\n"
-"Last-Translator: Weblate Admin <nathinabob@gmail.com>\n"
+"PO-Revision-Date: 2022-09-22 13:59+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://translate.disciple.tools/projects/"
 "pray4movement/disciple-tools-prayer-campaigns/fr/>\n"
 "Language: fr_FR\n"
@@ -46,7 +46,6 @@ msgid "Content to be added to the reminder email"
 msgstr ""
 
 #: admin/dt-prayer-campaigns.php:244 admin/dt-prayer-campaigns.php:351
-#, fuzzy
 msgid "Update"
 msgstr "Mettre à jour"
 
