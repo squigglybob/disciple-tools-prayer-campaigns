@@ -90,6 +90,9 @@ if ( $dt_campaign_selected_campaign_magic_link_settings['color'] === 'preset' ){
         <div class="row" style="justify-content: center">
             <a href="#sign-up" class="btn btn-common"><?php esc_html_e( 'Sign Up to Spend More Time with God', 'disciple-tools-prayer-campaigns' ); ?></a>
         </div>
+        <div class="row" style="justify-content: center">
+            <a href="#sign-up" class="btn btn-common"><?php esc_html_e( 'This is a test string that has just been added', 'disciple-tools-prayer-campaigns' ); ?></a>
+        </div>
     </div>
 </section>
 <!-- Services Section End -->
