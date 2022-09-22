@@ -4,8 +4,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/disciple-tools-"
 "prayer-campaigns\n"
 "POT-Creation-Date: 2022-09-22T10:01:30+01:00\n"
-"PO-Revision-Date: 2022-09-22 13:22+0000\n"
-"Last-Translator: nathaniel <nathinabob+translator@gmail.com>\n"
+"PO-Revision-Date: 2022-09-22 13:33+0000\n"
+"Last-Translator: Weblate Admin <nathinabob@gmail.com>\n"
 "Language-Team: French <https://translate.disciple.tools/projects/"
 "pray4movement/disciple-tools-prayer-campaigns/fr/>\n"
 "Language: fr_FR\n"
@@ -727,11 +727,11 @@ msgstr "Ramadan est finit"
 
 #: porches/ramadan/site/home-body.php:161
 msgid "Ramadan Ends ..."
-msgstr ""
+msgstr "Ramadan finis ..."
 
 #: porches/ramadan/site/home-body.php:168
 msgid "Ramadan Begins ..."
-msgstr ""
+msgstr "Ramadan commence ..."
 
 #: porches/ramadan/site/home-body.php:193
 msgid "here"
@@ -918,18 +918,16 @@ msgstr "Rechercher % s"
 
 #: post-type/subscriptions.php:529
 msgid "Verified"
-msgstr ""
+msgstr "vérifié"
 
 #: post-type/subscriptions.php:532
-#, fuzzy
-#| msgid "Email"
 msgid "Email Sent"
-msgstr "Email"
+msgstr "Email a parti"
 
 #: post-type/subscriptions.php:700 post-type/subscriptions.php:708
 msgctxt "List Filters"
 msgid "All"
-msgstr ""
+msgstr "Tout"
 
 #: shortcodes/24hour.php:33 shortcodes/ongoing.php:73
 msgid "covered once"
