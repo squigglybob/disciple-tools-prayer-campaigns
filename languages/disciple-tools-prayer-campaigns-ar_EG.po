@@ -4,8 +4,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/disciple-tools-"
 "prayer-campaigns\n"
 "POT-Creation-Date: 2022-09-22T10:01:30+01:00\n"
-"PO-Revision-Date: 2022-09-22 13:58+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2022-09-24 10:13+0000\n"
+"Last-Translator: Weblate Admin <nathinabob@gmail.com>\n"
 "Language-Team: Arabic (Egypt) <https://translate.disciple.tools/projects/"
 "pray4movement/disciple-tools-prayer-campaigns/ar_EG/>\n"
 "Language: ar_EG\n"
@@ -62,7 +62,7 @@ msgstr "تذكير بمواعيد الصلاة!"
 #: campaign-functions/send-email-utility.php:67
 msgctxt "August 18, 2021 from 03:15 am to 03:30 am for Tokyo, Japan"
 msgid "%1$s from %2$s to %3$s"
-msgstr "٪ 1 $ s من٪ 2 $ s إلى٪ 3 $ s"
+msgstr "%1$s  من%2$s إلى%3$s"
 
 #: campaign-functions/cron-schedule.php:136
 msgctxt "for Paris, France"
@@ -198,13 +198,13 @@ msgstr "مغطاة بالكامل مرة واحدة"
 #: magic-links/subscription-management/subscription-management.php:110
 #: shortcodes/24hour.php:32
 msgid "fully covered %1$s times"
-msgstr "تم تغطيتها بالكامل٪ 1 $ s مرة"
+msgstr "تم تغطيتها بالكامل%1$s مرة"
 
 #: magic-links/subscription-management/subscription-management.php:111
 #: shortcodes/24hour.php:35 shortcodes/ongoing.php:75
 msgctxt "Monday 5pm for 15 minutes"
 msgid "%1$s for %2$s minutes."
-msgstr "٪ 1 $ s لمدة٪ 2 $ s دقيقة."
+msgstr "%1$s لمدة%2$s دقيقة."
 
 #: magic-links/subscription-management/subscription-management.php:112
 msgid "Extend for 3 months"
